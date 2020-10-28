@@ -10,7 +10,7 @@ export const simpleAction = () => dispatch => {
 }
 
 export const fetchCharacters = () => dispatch => {
-    const url = "https://swapi.dev/api/people";
+    const url = `https://swapi.dev/api/people`;
     return fetch(url, {
         method: 'GET',
       }).then(res => res.json())
