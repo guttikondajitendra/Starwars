@@ -10,11 +10,9 @@ export const simpleAction = () => dispatch => {
 }
 
 export const fetchCharacters = () => dispatch => {
-<<<<<<< HEAD
+
     const url = "https://swapi.dev/api/people";
-=======
-    const url = `https://swapi.dev/api/people`;
->>>>>>> 8835a81e47b2de3721b4f5dae51c72f4edbbae33
+
     return fetch(url, {
         method: 'GET',
       }).then(res => res.json())
